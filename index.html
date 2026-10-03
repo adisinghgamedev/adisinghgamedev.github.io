@@ -347,10 +347,19 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9998;
 .cta .crow{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px}
 .cta .crow .ck{grid-column:1;order:1}.cta .crow .cp{grid-column:2;order:2}.cta .crow .cval{grid-column:1/-1;order:3}
 @media(min-width:1000px){.cta .crow{grid-template-columns:58px minmax(0,1fr) auto;gap:14px}.cta .crow .ck,.cta .crow .cval,.cta .crow .cp{grid-column:auto;order:0}}
+
+/* name-first hero + stronger nav brand */
+.hero h1{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.hero h1 .hi{font-family:'VT323',ui-monospace,Consolas,monospace;font-size:clamp(20px,3vw,28px);font-weight:400;letter-spacing:.04em;color:#b5e3c4;text-shadow:none;margin-bottom:10px}
+.hero h1 .nm{display:block;font-size:clamp(25px,6.8vw,58px);line-height:1.2;font-weight:400;color:var(--fg);text-shadow:0 0 22px rgba(125,255,160,.55),3px 0 rgba(255,40,90,.35),-3px 0 rgba(40,200,255,.35);margin-bottom:16px;max-width:100%}
+.hero h1 .o{display:block;font-size:clamp(13px,2.1vw,19px);line-height:1.6;padding-top:14px;border-top:2px solid var(--line2);width:100%;max-width:640px}
+nav b{font-size:13px}nav b .brand{color:var(--ac);text-decoration:none;font-weight:400;padding:0;border-radius:0;font-size:inherit;text-shadow:0 0 10px rgba(125,255,160,.45)}
+nav b .brand:hover{background:none;color:var(--fg)}
+@media(max-width:600px){nav b{font-size:11px}}
 </style></head><body>
-<nav><i id="pm"></i><b>Aditya Singh</b><div><a href="#stage" class="npl" data-i="play">Play</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+<nav><i id="pm"></i><b><a href="#" class="brand" aria-label="Aditya Singh, back to top">Aditya Singh</a></b><div><a href="#stage" class="npl" data-i="play">Play</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
 <div class="band"><canvas id="amb" aria-hidden="true"></canvas><div class="w">
-<header class="hero"><div class="now"><i></i>&gt; now designing Warbound &amp; Paperly at AbhiTechGames<span class="caret"></span></div><h1>Game Designer<br><span class="o">&amp; Project Manager</span></h1><p>Mechanics, systems and level flow, taken from rough prototype to something players understand, feel and enjoy. This portfolio is a playable level: press Play below, or just scroll to read.</p><div class="pills"><span>Game design</span><span>Level design</span><span>Project management</span><span>Prototyping</span></div><a class="cta2" href="#stage" id="hp" data-i="play">Play the level</a>
+<header class="hero"><div class="now"><i></i>&gt; now designing Warbound &amp; Paperly at AbhiTechGames<span class="caret"></span></div><h1><span class="hi">&gt; Hi, I'm</span><span class="nm">Aditya Singh</span><span class="o">Game Designer &amp; Project Manager</span></h1><p>Mechanics, systems and level flow, taken from rough prototype to something players understand, feel and enjoy. This portfolio is a playable level: press Play below, or just scroll to read.</p><div class="pills"><span>Game design</span><span>Level design</span><span>Project management</span><span>Prototyping</span></div><a class="cta2" href="#stage" id="hp" data-i="play">Play the level</a>
 <div class="tokens"><button class="tok wb" data-tok="wb" title="Warbound (tap it a few times)"><span class="fl"><span class="fr"><img src="assets/warbound-icon.png" alt="Warbound game icon" width="128" height="128"></span></span><b>WARBOUND</b></button><button class="tok pp" data-tok="pp" title="Paperly (tap it a few times)"><span class="fl"><span class="fr"><img src="assets/paperly-icon.png" alt="Paperly game icon" width="128" height="128"></span></span><b>PAPERLY</b></button></div></header>
 <div class="cab" id="cab"><div class="mq" aria-hidden="true"><span><i class="rec"></i>The level</span><span id="mqs" class="idle">Insert coin</span><span class="led"><i></i><i></i><i></i><i></i></span></div>
 <div id="stage">
